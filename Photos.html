@@ -9,76 +9,87 @@
     <title>Nature's Web Developers</title>
     
     <style>
-        header {
-            background: url('img/Lucas-the-spider.gif') no-repeat center center;
-            background-size: cover;
-            min-height: 1000px;
-            background-color: #C0392B;
-            color: #FFFFFF;
-        } 
-        p { 
-            font-size: 30px; 
-            font-family: 'Open Sans', sans-serif;
-            text-align: justify;
-        }
-        img.logo {
-            height: 50px;
-            vertical-align: middle;
-            margin-right: -10px;
-            margin-bottom: 10px;
-        }
-        
-        .card-image img { 
-            height: 200px;
-            object-fit: cover; 
-        }
-
-        .social-icon {
+    header {
+        background: url('img/Lucas-the-spider.gif') no-repeat center center;
+        background-size: cover;
+        min-height: 1000px;
+        background-color: #C0392B;
+        color: #FFFFFF;
+    }
+    
+    .social-icon { 
         margin: 0 5px;
         margin-bottom: -40px;
         background-color: white;
         border-radius: 50%;
+    } 
+    p { 
+        font-size: 30px; 
+        font-family: 'Open Sans', sans-serif;
+        text-align: justify;
     }
-    .social-icon i.facebook {
-        color: #3b5998;
+    .star-rating input[type="radio"] { 
+        display: none; 
+    } 
+    .star-rating .material-icons { 
+        font-size: 2em; 
+        color: #ccc; 
+        cursor: pointer; 
+    } 
+    .star-rating input[type="radio"]:checked ~ .material-icons, 
+    .star-rating input[type="radio"]:checked ~ label .material-icons { 
+        color: gold; 
     }
-    .social-icon i.twitter {
-        color: #1da1f2;
+    img.logo {
+        height: 50px;
+        vertical-align: middle;
+        margin-right: -10px;
+        margin-bottom: 10px;
     }
-    .social-icon i.linkedin {
-        color: #0077b5;
-    }
-    .social-icon i.instagram {
-    color: #e4405f;
-    }
-    .social-icon i.discord {
-        color: #7289da;
-    }
-    .social-icon i.reddit {
-        color: #ff4500;
-    }
-    .social-icon i.pinterest {
-        color: #e60023;
-    }
-    .social-icon i.whatsapp {
-        color: #25d366;
-    }
-    .social-icon i.snapchat {
-        color: #fffc00;
-    }
-    .social-icon i.youtube {
-        color: #ff0000;
-    }
-    .social-icon i.github { 
-        color: #333; 
-    }
-
-        @media screen and (max-width: 670px){
-            header {
-                min-height: 500px;
-            }
+    @media screen and (max-width: 670px){
+        header {
+            min-height: 500px;
         }
-    </style>
+        p {
+            font-size: 16px;
+        }
+        .nav-wrapper {
+            text-align: center;
+        }
+    }
+    @media only screen and (min-width: 601px) and (max-width: 992px) {
+        header {
+            min-height: 500px;
+        }
+        p {
+            font-size: 20px;
+        }
+        .nav-wrapper {
+            text-align: center;
+        }
+    }
+    @media only screen and (min-width: 993px) {
+        header {
+            min-height: 1000px;
+        }
+        p {
+            font-size: 30px;
+        }
+        .nav-wrapper {
+            text-align: left;
+        }
+    }
+    img, video {
+        max-width: 100%;
+        height: auto;
+    }
+    .container {
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
+    }
+</style>
+
 </head>
 <body>
     <header>
