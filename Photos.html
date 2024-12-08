@@ -28,57 +28,52 @@
         font-family: 'Open Sans', sans-serif;
         text-align: justify;
     }
-    .star-rating input[type="radio"] { 
-        display: none; 
-    } 
-    .star-rating .material-icons { 
-        font-size: 2em; 
-        color: #ccc; 
-        cursor: pointer; 
-    } 
-    .star-rating input[type="radio"]:checked ~ .material-icons, 
-    .star-rating input[type="radio"]:checked ~ label .material-icons { 
-        color: gold; 
-    }
     img.logo {
         height: 50px;
         vertical-align: middle;
         margin-right: -10px;
         margin-bottom: 10px;
     }
-    @media screen and (max-width: 670px){
-        header {
-            min-height: 500px;
-        }
-        p {
-            font-size: 16px;
-        }
-        .nav-wrapper {
-            text-align: center;
-        }
+    /* Styles for the header */
+header .brand-logo {
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+/* Adjust font size and padding for smaller screens */
+@media only screen and (max-width: 670px) {
+    header .brand-logo {
+        font-size: 1.2rem; /* Decrease font size */
+        padding-left: 10px; /* Reduce padding */
     }
-    @media only screen and (min-width: 601px) and (max-width: 992px) {
-        header {
-            min-height: 500px;
-        }
-        p {
-            font-size: 20px;
-        }
-        .nav-wrapper {
-            text-align: center;
-        }
+    .nav-wrapper .brand-logo img {
+        height: 30px; /* Reduce logo size */
     }
-    @media only screen and (min-width: 993px) {
-        header {
-            min-height: 1000px;
-        }
-        p {
-            font-size: 30px;
-        }
-        .nav-wrapper {
-            text-align: left;
-        }
+}
+
+/* Adjustments for medium-sized screens */
+@media only screen and (min-width: 671px) and (max-width: 992px) {
+    header .brand-logo {
+        font-size: 1.5rem; /* Slightly larger font size */
+        padding-left: 20px; /* Adjust padding */
     }
+    .nav-wrapper .brand-logo img {
+        height: 40px; /* Adjust logo size */
+    }
+}
+
+/* Default styles for large screens */
+@media only screen and (min-width: 993px) {
+    header .brand-logo {
+        font-size: 2rem; /* Default font size */
+        padding-left: 30px; /* Default padding */
+    }
+    .nav-wrapper .brand-logo img {
+        height: 50px; /* Default logo size */
+    }
+}
+
     img, video {
         max-width: 100%;
         height: auto;
