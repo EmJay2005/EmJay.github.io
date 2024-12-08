@@ -66,11 +66,67 @@
     .social-icon i.github { 
         color: #333; 
     }
-        @media screen and (max-width: 670px){
-            header {
-                min-height: 500px;
-            }
-        }
+        @media screen and (max-width: 670px){ 
+        header { 
+            min-height: 500px; 
+        } 
+        p { 
+            font-size: 16px; 
+        } 
+        .nav-wrapper { 
+            text-align: center; 
+        } 
+    } /* Styles for the header */ 
+    header .brand-logo { 
+        display: flex; 
+        align-items: center; 
+        white-space: nowrap; /* Prevents text from wrapping */ 
+    } /* Adjust font size and padding for smaller screens */ 
+    @media only screen and (max-width: 670px) { 
+        header .brand-logo { 
+            font-size: 1.2rem; /* Decrease font size */ 
+            padding-left: 10px; /* Reduce padding */ 
+        } 
+        .nav-wrapper .brand-logo img { 
+            height: 30px; /* Reduce logo size */ 
+        } 
+    } /* Adjustments for medium-sized screens */ 
+    @media only screen and (min-width: 671px) and (max-width: 992px) { 
+        header .brand-logo { 
+            font-size: 1.5rem; /* Slightly larger font size */ 
+            padding-left: 20px; /* Adjust padding */ 
+        } 
+        .nav-wrapper .brand-logo img { 
+            height: 40px; /* Adjust logo size */ 
+        } 
+    } /* Default styles for large screens */ 
+    @media only screen and (min-width: 993px) { 
+        header .brand-logo { 
+            font-size: 2rem; /* Default font size */ 
+            padding-left: 30px; /* Default padding */ 
+        } 
+        .nav-wrapper .brand-logo img { 
+            height: 50px; /* Default logo size */ 
+        } 
+    }
+    @media screen and (max-width: 670px) { 
+        .social-icon i { 
+            font-size: 1.8em;
+            padding: 1px; 
+        } 
+        .social-icon { 
+            margin: 0 5px; 
+        } 
+    } 
+    img, video { 
+        max-width: 100%; 
+        height: auto; 
+    } 
+    .container { 
+        max-width: 100%; 
+        width: 90%; 
+        margin: 0 auto; 
+    }
     </style>
 
 </head>
