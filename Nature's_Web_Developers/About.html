@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <title>Nature's Web Developers</title>
+    
+    <style>
+        header {
+            background: url('img/surprised.gif') no-repeat center center;
+            background-size: cover;
+            min-height: 1000px;
+            background-color: #C0392B;
+            color: #FFFFFF;
+        }
+        p { 
+            font-size: 30px; 
+            font-family: 'Open Sans', sans-serif;
+            text-align: justify;
+        }
+        img.logo {
+            height: 60px;
+            vertical-align: middle;
+            margin-right: -10px;
+            margin-bottom: 10px;
+        }
+        .social-icon {
+        margin: 0 5px;
+        margin-bottom: -40px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    .social-icon i.facebook {
+        color: #3b5998;
+    }
+    .social-icon i.twitter {
+        color: #1da1f2;
+    }
+    .social-icon i.linkedin {
+        color: #0077b5;
+    }
+    .social-icon i.instagram {
+    color: #e4405f;
+    }
+    .social-icon i.discord {
+        color: #7289da;
+    }
+    .social-icon i.reddit {
+        color: #ff4500;
+    }
+    .social-icon i.pinterest {
+        color: #e60023;
+    }
+    .social-icon i.whatsapp {
+        color: #25d366;
+    }
+    .social-icon i.snapchat {
+        color: #fffc00;
+    }
+    .social-icon i.youtube {
+        color: #ff0000;
+    }
+    .social-icon i.github { 
+        color: #333; 
+    }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="About.html" class="brand-logo">
+                    <img src="img/Spider png.png" id="spider-logo" alt="spider-icon" class="logo">
+                    Nature's Web Developers
+                </a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-menu"> 
+                    <i class="material-icons">menu</i> 
+                </a> 
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="Web Development.html">Web Development</a></li>
+                    <li><a href="Fun Facts.html">Fun Facts</a></li>
+                    <li><a href="Photos.html">Photos</a></li>
+                    <li><a href="Get Involved.html">Get Involved</a></li>
+                    <li><a href="Contacts.html">Contacts</a></li>  
+                </ul>
+                <ul class="sidenav grey lighten-2 center" id="mobile-menu">
+                    <li><a href="About.html">About Spiders</a></li>
+                    <li><a href="Web Development.html">Web Development</a></li>
+                    <li><a href="Fun Facts.html">Fun Facts</a></li>
+                    <li><a href="Photos.html">Photos</a></li>
+                    <li><a href="Get Involved.html">Get Involved</a></li>
+                    <li><a href="Contacts.html">Contacts</a></li>
+                </ul> 
+            </div> 
+        </nav>
+   </header>
+   
+   <div id="arachnophobia-modal" class="modal"> 
+        <div class="modal-content"> 
+            <h4><i class="fas fa-exclamation-triangle red-text text-darken-4"></i>Spider Warning!</h4> 
+            <p class="flow-text">This website contains images and information about spiders. If you have arachnophobia, please proceed with caution.</p> 
+        </div> 
+        <div class="modal-footer"> 
+        <a href="#!" class="modal-close waves-effect btn green darken-4  center waves-grey">I Understand</a> 
+        </div> 
+    </div>
+    
+    <section class="container section scrollspy" id="about">
+        <div class="row">
+            <div class="col s12">
+                <h1>About Spiders</h1>
+                <p>Spiders are fascinating arachnids known for their unique web-spinning abilities. They belong to the class Arachnida and are characterized by having eight legs, fangs that inject venom, and the ability to produce silk.</p>
+            </div>
+        </div>
+    </section>
+    <section class="container section scrollspy" id="Anatomy">
+        <div class="row">
+            <div class="col s12">
+                <h2>Anatomy</h2>
+            </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/cephalothorax.jpg" alt="Fishing Spider" class="responsive-img materialboxed tooltipped" data-tooltip="Fishing Spider">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">Cephalothorax</h3>
+                <p>This is the combined head and thorax, where the eyes, mouthparts (chelicerae), and legs are attached.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Trapdoor-spider.jpg" alt="Trapdoor Spider" class="responsive-img materialboxed tooltipped" data-tooltip="Trapdoor Spider">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">Abdomen</h3>
+                <p>Contains the spinnerets that produce silk, along with the reproductive organs and other vital systems.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/blue eyes.webp" alt="Regal Jumping Spider" class="responsive-img materialboxed tooltipped" data-tooltip="Regal Jumping Spider">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">Eyes</h3>
+                <p>Most spiders have multiple simple eyes that can detect light and movement.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/water-spider.jpg" alt="Six-Spotted Fishing Spider" class="responsive-img materialboxed tooltipped" data-tooltip="Six-Spotted Fishing Spider">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">Legs</h3>
+                <p>Spiders have eight legs, each consisting of seven segments. The legs are adapted for various functions, such as walking, jumping, or feeling their environment.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="img/hum.gif" alt="Lucas-the-spider.gif" class="responsive-img" >
+            
+            </div>
+        </div>
+    <section class="container section scrollspy" id="Habitats">
+        <div class="row">
+            <div class="col s12">
+                <h1>Habitats</h1>
+            </div>
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="img/sand-spider.jpg" alt="Six-Eyed Sand Spider" class="responsive-img materialboxed tooltipped" data-tooltip="Six-Eyed Sand Spider">
+                </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">Terrestrial</h3>
+                <p> Many spiders live on land in various environments, from forests and grasslands to deserts and caves.</p>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4 push-l7 offset-l1">
+                    <img src="img/diving-bell.png" alt="Diving Bell Spider" class="responsive-img materialboxed tooltipped" data-tooltip="Diving Bell Spider">
+                </div>
+                <div class="col s12 l6 pull-l4 right-align">
+                    <h3 class="indigo-text text-darken-2">Aquatic</h3>
+                    <p>Some species, like the diving bell spider, raft spider, and fishing spiders live near or in water.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="img/urban-spider.jpg" alt="European Garden Spider" class="responsive-img materialboxed tooltipped" data-tooltip="European Garden Spider">
+                </div>
+                <div class="col s12 l6 offset-l1">
+                    <h3 class="indigo-text text-darken-2">Urban</h3>
+                    <p> Spiders can also be found in human dwellings, gardens, and buildings, where they help control pest populations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container section scrollspy" id="different_species">
+        <div class="row">
+            <div class="col s12">
+                <h1>Information on Different Species of Spiders Around the World</h1>
+                <p>There are over 45,000 known species of spiders, each with unique adaptations and behaviors.</p>
+            </div>
+            <div class="col s12">
+                <h2>Examples:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Black_widow.jpg" alt="Black Widow Spider" class="responsive-img materialboxed tooltipped" data-tooltip="Black Widow Spider">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">Black Widow (Latrodectus)</h3>
+                <p> Known for its potent venom and distinctive red hourglass marking on its abdomen. Found in temperate regions worldwide.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/Mexican-Fire-Leg.webp" alt="Mexican FireLeg Tarantula" class="responsive-img materialboxed tooltipped" data-tooltip="Mexican FireLeg Tarantula">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">Tarantula (Theraphosidae)</h3>
+                <p> Large, hairy spiders found in tropical and subtropical regions. Popular as exotic pets.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Jumping_spider.jpg" alt="Pantropical Jumping Spider" class="responsive-img materialboxed tooltipped" data-tooltip="Pantropical Jumping Spider">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">Jumping Spider (Salticidae)</h3>
+                <p> Known for their excellent vision and jumping ability. Found in various environments, including forests, grasslands, and deserts.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/orb-weaver_spider.jpg" alt="Demon Orb-Weaver Spider" class="responsive-img materialboxed tooltipped" data-tooltip="Demon Orb-Weaver Spider">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">Orb-Weaver (Araneidae)</h3>
+                <p> Famous for their intricate, wheel-shaped webs. Commonly found in gardens, forests, and fields.</p>
+            </div>
+        </div>
+    </section>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="img/spinning.gif" alt="Lucas-the-spider.gif" class="responsive-img" >
+        
+        </div>
+    </div>
+    <section class="container section scrollspy" id="life_stages">
+        <div class="row">
+            <div class="col s12">
+                <h1>The Life Stages of a Spider from Egg to Adult</h1>
+                <p>Spiders undergo several stages from egg to adult, with some variations among species.</p>
+            </div>
+            <div class="row">
+                <div class="col s12 l4">
+                    <img src="img/spider-eggs.webp" alt="Cellar Spider Eggs" class="responsive-img materialboxed tooltipped" data-tooltip="Cellar Spider Eggs">
+                </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">Egg</h3>
+                <p> Female spiders lay eggs in silk sacs, which provide protection. The number of eggs varies by species, ranging from a few dozen to several hundred.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/wolf_spider_egg_sack.jpg" alt="Wolf Spider Egg Sac" class="responsive-img materialboxed tooltipped" data-tooltip="Wolf Spider Egg Sac">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">Egg Sac</h3>
+                <p> The egg sac is guarded by the female until the spiderlings are ready to emerge.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/Gasteracantha_mammosa_spiderlings.jpg" alt="Asian Spinybacked Spiderlings" class="responsive-img materialboxed tooltipped" data-tooltip="Asian Spinybacked Spiderlings">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">Spiderling</h3>
+                <p> After hatching, spiderlings resemble miniature adults. They disperse by "ballooning," where they release silk threads that catch the wind, carrying them to new locations.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4 push-l7 offset-l1">
+                <img src="img/Juvenile_House_Spider.jpg" alt="Juvenile Hobo Spider" class="responsive-img materialboxed tooltipped" data-tooltip="Juvenile Hobo Spider">
+            </div>
+            <div class="col s12 l6 pull-l4 right-align">
+                <h3 class="indigo-text text-darken-2">Juvenile</h3>
+                <p> Spiderlings grow through a series of molts, shedding their exoskeleton to accommodate their increasing size.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l4">
+                <img src="img/adult-female-typostola-barbata.webp" alt="Adult Australian Hunstman Spider" class="responsive-img materialboxed tooltipped" data-tooltip="Adult Australian Hunstman Spider">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h3 class="indigo-text text-darken-2">Adult</h3>
+                <p> After several molts, spiders reach adulthood. Adult spiders focus on reproduction, with males seeking mates and females often continuing to hunt and care for their young.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="col s12">
+            <ul class="pagination center">
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                <li class="active blue darken-4"><a href="About.html">1</a></li>
+                <li class="waves-effect"><a href="Web Development.html">2</a></li>
+                <li class="waves-effect"><a href="Fun Facts.html">3</a></li>
+                <li class="waves-effect"><a href="Photos.html">4</a></li>
+                <li class="waves-effect"><a href="Get Involved.html">5</a></li>
+                <li class="waves-effect"><a href="Contacts.html">6</a></li>
+                <li class="disabled"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l12">
+                    <div class="center-align">
+                        <a href="https://www.facebook.com" class="tooltipped btn-floating btn-small social-icon" data-tooltip="Facebook" data-position="left">
+                            <i class="fab fa-facebook facebook"></i>
+                        </a>
+                        <a href="https://www.x.com" class="tooltipped btn-floating btn-small social-icon" data-tooltip="Twitter" data-position="top">
+                            <i class="fab fa-twitter twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" class="tooltipped btn-floating btn-small social-icon" data-tooltip="Linked In" data-position="bottom">
+                            <i class="fab fa-linkedin linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com" class="tooltipped btn-floating btn-small social-icon" data-tooltip="Instagram" data-position="top">
+                            <i class="fab fa-instagram instagram"></i>
+                        </a>
+                        <a href="https://www.discord.com" class="tooltipped btn-floating btn-small social-icon" data-tooltip="Discord" data-position="bottom">
+                            <i class="fab fa-discord discord"></i>
+                        </a>
+                        <a href="https://www.reddit.com" class="tooltipped btn-floating btn-small social-icon" data-tooltip="Reddit" data-position="top">
+                            <i class="fab fa-reddit reddit"></i>
+                        </a>
+                        <a href="https://www.pinterest.com" class="tooltipped btn-floating btn-small social-icon" data-tooltip="Pinterest" data-position="bottom">
+                            <i class="fab fa-pinterest pinterest"></i>
+                        </a>
+                        <a href="https://www.whatsapp.com" class="tooltipped btn-floating btn-small social-icon" data-tooltip="Whatsapp" data-position="top">
+                            <i class="fab fa-whatsapp whatsapp"></i>
+                        </a>
+                        <a href="https://www.snapchat.com" class="tooltipped btn-floating btn-small social-icon" data-tooltip="Snapchat" data-position="bottom">
+                            <i class="fab fa-snapchat snapchat"></i>
+                        </a>
+                        <a href="https://www.youtube.com" class="tooltipped btn-floating btn-small social-icon" data-tooltip="Youtube" data-position="right">
+                            <i class="fab fa-youtube youtube"></i>
+                        </a>
+                        <a href="https://www.github.com" class="tooltipped btn-floating btn-small social-icon" data-tooltip="Github" data-position="right">
+                            <i class="fab fa-github github"></i>
+                        </a>
+                    </div>
+    
+                    <h3 class="center-align"><img src="img/Spider png.png" id="spider-logo" alt="spider-icon" class="logo">Nature's Web Developers</h3>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy; 2024 Nature's Web Developers. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="js/jquery.js"></script>
+    <script src=js/materialize.min.js></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy(); 
+            $('.modal').modal({ dismissible: false  
+            });
+            $('#arachnophobia-modal').modal('open');
+        });
+    </script>
+
+</body>
+</html>
