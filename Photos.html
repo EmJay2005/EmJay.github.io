@@ -8,82 +8,70 @@
     <link rel="stylesheet" href="css/materialize.min.css">
     <title>Nature's Web Developers</title>
     
-    <style>
-    header {
-        background: url('img/Lucas-the-spider.gif') no-repeat center center;
-        background-size: cover;
-        min-height: 1000px;
-        background-color: #C0392B;
-        color: #FFFFFF;
-    }
-    
-    .social-icon { 
+   <style>
+        header {
+            background: url('img/surprised.gif') no-repeat center center;
+            background-size: cover;
+            min-height: 1000px;
+            background-color: #C0392B;
+            color: #FFFFFF;
+        }
+        p { 
+            font-size: 30px; 
+            font-family: 'Open Sans', sans-serif;
+            text-align: justify;
+        }
+        img.logo {
+            height: 60px;
+            vertical-align: middle;
+            margin-right: -10px;
+            margin-bottom: 10px;
+        }
+        .social-icon {
         margin: 0 5px;
         margin-bottom: -40px;
         background-color: white;
         border-radius: 50%;
-    } 
-    p { 
-        font-size: 30px; 
-        font-family: 'Open Sans', sans-serif;
-        text-align: justify;
     }
-    img.logo {
-        height: 50px;
-        vertical-align: middle;
-        margin-right: -10px;
-        margin-bottom: 10px;
+    .social-icon i.facebook {
+        color: #3b5998;
     }
-    /* Styles for the header */
-header .brand-logo {
-    display: flex;
-    align-items: center;
-    white-space: nowrap; /* Prevents text from wrapping */
-}
-
-/* Adjust font size and padding for smaller screens */
-@media only screen and (max-width: 670px) {
-    header .brand-logo {
-        font-size: 1.2rem; /* Decrease font size */
-        padding-left: 10px; /* Reduce padding */
+    .social-icon i.twitter {
+        color: #1da1f2;
     }
-    .nav-wrapper .brand-logo img {
-        height: 30px; /* Reduce logo size */
+    .social-icon i.linkedin {
+        color: #0077b5;
     }
-}
-
-/* Adjustments for medium-sized screens */
-@media only screen and (min-width: 671px) and (max-width: 992px) {
-    header .brand-logo {
-        font-size: 1.5rem; /* Slightly larger font size */
-        padding-left: 20px; /* Adjust padding */
+    .social-icon i.instagram {
+    color: #e4405f;
     }
-    .nav-wrapper .brand-logo img {
-        height: 40px; /* Adjust logo size */
+    .social-icon i.discord {
+        color: #7289da;
     }
-}
-
-/* Default styles for large screens */
-@media only screen and (min-width: 993px) {
-    header .brand-logo {
-        font-size: 2rem; /* Default font size */
-        padding-left: 30px; /* Default padding */
+    .social-icon i.reddit {
+        color: #ff4500;
     }
-    .nav-wrapper .brand-logo img {
-        height: 50px; /* Default logo size */
+    .social-icon i.pinterest {
+        color: #e60023;
     }
-}
-
-    img, video {
-        max-width: 100%;
-        height: auto;
+    .social-icon i.whatsapp {
+        color: #25d366;
     }
-    .container {
-        max-width: 100%;
-        width: 90%;
-        margin: 0 auto;
+    .social-icon i.snapchat {
+        color: #fffc00;
     }
-</style>
+    .social-icon i.youtube {
+        color: #ff0000;
+    }
+    .social-icon i.github { 
+        color: #333; 
+    }
+        @media screen and (max-width: 670px){
+            header {
+                min-height: 500px;
+            }
+        }
+    </style>
 
 </head>
 <body>
